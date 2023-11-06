@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    tools:context=".detailMovie">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details Movie"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#7B7575"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/tombolBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:backgroundTint="@color/white">
+    </ImageButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/film1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/film1" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poster"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="BRAVE">
+    </TextView>
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="Pixar Animation Studios">
+    </TextView>
+
+    <TextView
+        android:id="@+id/batas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/by"
+        android:text="|">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/bintang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_star_24"
+        android:layout_toEndOf="@id/batas"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/bintang"
+        android:text="4.0">
+    </TextView>
+
+    <Button
+        android:id="@+id/tombol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fantasi"
+        android:textColor="#B2B5BB"
+        android:backgroundTint="#777777"
+        android:layout_below="@id/by"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp">
+    </Button>
+
+    <Button
+        android:id="@+id/tombol2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertualangan"
+        android:textColor="#B2B5BB"
+        android:backgroundTint="#777777"
+        android:layout_below="@id/by"
+        android:layout_toEndOf="@id/tombol1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/sinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tombol1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Film ini berlangsung di Skotlandia abad ke-10. Putri Merida adalah seorang pemanah yang sangat terampil yang tinggal di kerajaan Skotlandia DunBroch dengan ibunya Ratu Elinor, dan ayahnya Raja Fergus. ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ReadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sinopsis"
+        android:text="Read more"
+        android:layout_marginLeft="30dp"
+        android:textColor="#546EE5">
+    </TextView>
+
+    <Button
+        android:id="@+id/tombolGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Ticket"
+        android:textSize="25dp"
+        android:backgroundTint="#777777"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sinopsis"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
+    </Button>
+
+
+</RelativeLayout>
